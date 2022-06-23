@@ -9,10 +9,12 @@ Breaking Bad Info
 Application to search characters and episode titles for the Breaking Bad television show.
 
 ## API and Data Sample
+<ul>
+<li>Characters API: https://breakingbadapi.com/api/characters </li>
+<li>Episodes API: https://breakingbadapi.com/api/episodes </li>
+<li>Deaths API: https://breakingbadapi.com/api/deaths</li>
+</ul>
 
-Characters API: https://breakingbadapi.com/api/characters
-Episodes API: https://breakingbadapi.com/api/episodes
-Deaths API: https://breakingbadapi.com/api/deaths
 ```
 [
     {
@@ -40,10 +42,21 @@ Deaths API: https://breakingbadapi.com/api/deaths
 ]
 ```
 ## Wireframes
-<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/frontpage.png" width="50%">
-<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/characters-page.png" width="50%">
-<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/episodes-page.png" width="50%">
+### Desktop
+<h5>Home Page</h5>
+<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/frontpage.png" width="70%"> 
+<h5>Characters Page</h5>
+<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/characters-page.png" width="70%">
+<h5>Episodes Page</h5>
+<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/episodes-page.png" width="70%">
 
+### Mobile
+<h5>Mobile Home Page</h5>
+<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/mobile-home-page.png" width="50%"> 
+<h5>Mobile haracters Page</h5>
+<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/mobile-character.png" width="50%">
+<h5>Mobile Episodes Page</h5>
+<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/mobile-episode.png" width="50%">
 
 ### MVP/PostMVP
 #### MVP 
