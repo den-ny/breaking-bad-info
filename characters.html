@@ -4,24 +4,28 @@
 <head>
   <meta charset="utf-8">
   <title>Characters</title>
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="characters.css">
 </head>
 
 <body>
   <main>
-    <button class="home">Home</button>
-    <form>
-      <input type="text" placeholder="Search for character name">
-      <input type="submit" value="Search">
-    </form>
-
-    <button class="alive">Show Alive</button>
-    <button class="dead">Show Dead</button>
-    <button class="reset">Show All</button>
+    <nav class="nav-container">
+      <nav class="nav-left">
+        <button class="home">Home</button>
+        <form>
+          <input type="text" class="input" placeholder="Search for character name">
+        </form>
+      </nav>
+      <nav class="nav-right">
+        <button class="alive">Show Alive</button>
+        <button class="dead">Show Dead</button>
+        <button class="reset">Show All</button>
+      </nav>
+    </nav>
 
     <div class="default"></div>
     <div class="search"></div>
+
   </main>
   <script src="characters.js"></script>
 </body>
