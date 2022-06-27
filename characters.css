@@ -2,3 +2,46 @@
   box-sizing: border-box;
   position: relative;
 }
+
+
+.first {
+  border: 1px solid black;
+  display: flex;
+  padding: 1%;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.second {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+
+.default {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+div {
+  border: 2px solid red;
+  display: grid;
+  grid-template-rows: .01fr 1fr .01fr;
+  font-size: 1.5em;
+}
+
+.con {
+  display: flex;
+}
+
+[src*="jp" i],
+[src*="png" i] {
+  width: 50px;
+}
+
+img {
+  min-width: 100%;
+
+}
