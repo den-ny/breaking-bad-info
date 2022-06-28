@@ -59,6 +59,7 @@ div {
 
 .image-container {
   display: flex;
+  flex-direction: column;
 }
 
 [src*="jp" i],
@@ -69,6 +70,10 @@ div {
 img {
   min-width: 100%;
   min-height: 100%;
+}
+
+a {
+  flex-grow: 1;
 }
 
 @media screen and (min-width: 768px) {

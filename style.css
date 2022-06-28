@@ -69,16 +69,21 @@ button:hover {
 
 .char-search>.image-container {
   display: flex;
+  flex-direction: column;
 }
 
-.char-search>*>*>[src*="jp" i],
-.char-search>*>*>[src*="png" i] {
+.char-search>*>*>*>[src*="jp" i],
+.char-search>*>*>*>[src*="png" i] {
   width: 50px;
 }
 
-.char-search>*>*>img {
+.char-search>*>*>*>img {
   min-width: 100%;
   min-height: 100%;
+}
+
+a {
+  flex-grow: 1;
 }
 
 div[class^="episode"] {
@@ -96,7 +101,7 @@ div[class^="text"][class$="container"] {
 
 .title-search>*>*>.image-container {
   display: flex;
-  width: 20%;
+  width: 25%;
 }
 
 .title-search>*>*>*>img {

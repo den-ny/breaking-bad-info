@@ -25,7 +25,8 @@ let search = function (event) {
         document.querySelector('.char-search').innerHTML +=
           `<div>${r[i].name}<br>
             <div class ="image-container">
-              <img src= ${r[i].img} alt="${r[i].name}"></img>
+            <a href="https://en.wikipedia.org/wiki/${r[i].portrayed}" target="_blank" rel="noopener noreferrer">
+              <img src= ${r[i].img} alt="${r[i].name}"></img></a>
             </div>
             Status: ${r[i].status}
           </div>`

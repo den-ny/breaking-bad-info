@@ -10,14 +10,15 @@ let url = "https://breakingbadapi.com/api/characters"
 
 fetch(url)
   .then(response => response.json())
-  .then(response => {
-    for (let index = 0; index < response.length; index++) {
+  .then(r => {
+    for (let i = 0; i < r.length; i++) {
       document.querySelector(`.default`).innerHTML +=
-        `<div>${response[index].name}<br>
+        `<div>${r[i].name}<br>
           <div class ="image-container">
-            <img src= ${response[index].img} alt="${response[index].name}">
-            </img></div>
-          Status: ${response[index].status}
+            <a href="https://en.wikipedia.org/wiki/${r[i].portrayed}" target="_blank" rel="noopener noreferrer">
+            <img src= ${r[i].img} alt="${r[i].name}"></img></a>
+          </div>
+          Status: ${r[i].status}
         </div>`
     }
   })
@@ -41,14 +42,15 @@ let handleSubmit = function (event) {
 
   fetch(modifiedUrl)
     .then(response => response.json())
-    .then(response => {
-      for (let i = 0; i < response.length; i++) {
+    .then(r => {
+      for (let i = 0; i < r.length; i++) {
         document.querySelector('.search').innerHTML +=
-          `<div>${response[i].name}<br>
+          `<div>${r[i].name}<br>
             <div class ="image-container">
-              <img src= ${response[i].img} alt="${response[i].name}"></img>
+              <a href="https://en.wikipedia.org/wiki/${r[i].portrayed}" target="_blank" rel="noopener noreferrer">
+              <img src= ${r[i].img} alt="${r[i].name}"></img></a>
             </div>
-            Status: ${response[i].status}
+            Status: ${r[i].status}
           </div>`
       }
     })
