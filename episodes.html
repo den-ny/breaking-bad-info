@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Episodes</title>
   <link rel="stylesheet" href="episodes.css">
 
@@ -10,24 +11,33 @@
 
 <body>
   <main>
-    <button class="home">Home </button>
-    <form>
-      <input type="text" placeholder="Search for episode title">
-      <input type="submit">
-    </form>
+    <nav class="nav-container">
+      <nav class="nav-top">
 
-    <button class="season1">S1</button>
-    <button class="Season2">S2</button>
-    <button class="season3">S3</button>
-    <button class="season4">S4</button>
-    <button class="season5">S5</button>
-    <div class="search"></div>
-    <div class="all"></div>
+        <button class="home">Home </button>
+        <form>
+          <input type="text" class="input" placeholder="Search for episode title">
+          <input type="submit" class="submit" value="Search">
+        </form>
+      </nav>
+      <nav class="nav-bottom">
+        <button class="season1">S1</button>
+        <button class="season2">S2</button>
+        <button class="season3">S3</button>
+        <button class="season4">S4</button>
+        <button class="season5">S5</button>
+      </nav>
+    </nav>
+
+    <div class="default"></div>
+
     <div class="s1"> </div>
     <div class="s2"> </div>
     <div class="s3"> </div>
     <div class="s4"> </div>
     <div class="s5"> </div>
+
+    <div class="search"></div>
 
   </main>
   <script src="episodes.js"></script>

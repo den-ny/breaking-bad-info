@@ -6,6 +6,7 @@
 .nav-container {
   border: 1px solid black;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background-color: whitesmoke;
 }
@@ -22,19 +23,17 @@ form {
 
 .input {
   flex-grow: 1;
-  font-size: 1.5em;
 }
 
 .nav-right {
   display: flex;
-  flex-grow: 0.6;
-  gap: 5%;
-  margin-left: 2%;
+  gap: 1%;
+  justify-content: center;
 }
 
-button {
-  padding: 2%;
-  font-size: 1em;
+button,
+.submit {
+  padding: 1.5%;
   background-color: green;
   color: white;
   border: transparent;
@@ -47,15 +46,15 @@ button:hover {
 .default,
 .search {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 div {
   display: grid;
   grid-template-rows: .01fr 1fr .01fr;
-  font-size: 1.25em;
-  border: 2px solid black;
+  border: 1px solid black;
   text-align: center;
+  font-size: .95em;
 }
 
 .image-container {
@@ -69,4 +68,37 @@ div {
 
 img {
   min-width: 100%;
+  min-height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-container {
+    flex-direction: row;
+  }
+
+  .input {
+    font-size: 1.5em;
+  }
+
+  .nav-right {
+    gap: 5%;
+    flex-grow: 0.6;
+    margin-left: 2%;
+    justify-content: start;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 2%;
+  }
+
+  .default,
+  .search {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  div {
+    font-size: 1.1em;
+    border: 2px solid black;
+  }
 }

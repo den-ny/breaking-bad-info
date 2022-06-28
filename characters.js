@@ -41,14 +41,14 @@ let handleSubmit = function (event) {
 
   fetch(modifiedUrl)
     .then(response => response.json())
-    .then(x => {
-      for (let i = 0; i < x.length; i++) {
+    .then(response => {
+      for (let i = 0; i < response.length; i++) {
         document.querySelector('.search').innerHTML +=
-          `<div>${x[i].name}<br>
-          <div class ="image-container">
-            <img src= ${x[i].img} alt="${x[i].name}">
-            </img></div>
-          Status: ${x[i].status}
+          `<div>${response[i].name}<br>
+            <div class ="image-container">
+              <img src= ${response[i].img} alt="${response[i].name}"></img>
+            </div>
+            Status: ${response[i].status}
           </div>`
       }
     })

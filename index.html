@@ -3,23 +3,31 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Breaking Bad Info</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <main>
-    <div class="container">
-      <!-- <img src="" alt="breaking bad image"> -->
+    <nav class="nav-container">
+      <nav class="nav-img">
+        <img src="img/frontpage.png" alt="breaking bad image">
+      </nav>
+      <nav class="nav-top">
+        <form>
+          <input type="text" class="input" placeholder="Enter a character or episode title">
+          <input type="submit" class="button">
+        </form>
+      </nav>
+      <nav class="nav-bottom">
+        <button class="characters">View All Characters</button>
+        <button class="episodes">View All Episodes</button>
+      </nav>
+    </nav>
 
-      <form>
-        <input type="text" placeholder="Enter a character or episode title">
-        <input type="submit">
-      </form>
-      <br>
-      <button class="characters">View All Characters</button>
-      <button class="episodes">View All Episodes</button>
-    </div>
+    <div class="char-search"> </div>
+    <div class="title-search"> </div>
   </main>
   <script src="script.js"></script>
 </body>

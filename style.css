@@ -2,3 +2,126 @@
   box-sizing: border-box;
   position: relative;
 }
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+
+.nav-img {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+
+form {
+  display: flex;
+  border: 1px grey;
+  flex-grow: .3;
+}
+
+.input {
+  flex-grow: 1;
+  font-size: 1em;
+}
+
+input {
+  padding: 1%;
+}
+
+.nav-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+
+button,
+.button {
+  padding: 1%;
+  font-size: 1em;
+  background-color: green;
+  color: white;
+  border: transparent;
+}
+
+button:hover {
+  background-color: lightgreen;
+}
+
+.char-search {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.char-search>div {
+  display: grid;
+  grid-template-rows: .01fr 1fr .01fr;
+  font-size: .9em;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.char-search>.image-container {
+  display: flex;
+}
+
+.char-search>*>*>[src*="jp" i],
+.char-search>*>*>[src*="png" i] {
+  width: 50px;
+}
+
+.char-search>*>*>img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+div[class^="episode"] {
+  border: 1px solid black;
+}
+
+div[class^="ep"][class$="container"] {
+  display: flex;
+}
+
+div[class^="text"][class$="container"] {
+  border: 1px solid black;
+  flex-grow: 1;
+}
+
+.title-search>*>*>.image-container {
+  display: flex;
+  width: 20%;
+}
+
+.title-search>*>*>*>img {
+  min-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-img {
+    width: 100%;
+  }
+
+  .char-search {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .char-search>div {
+    font-size: 1.1em;
+    border: 2px solid black;
+  }
+
+  .title-search>*>*>.image-container {
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}

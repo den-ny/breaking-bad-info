@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+.nav-top {
+  display: flex;
+  flex-grow: .5;
+}
+
+form {
+  display: flex;
+  border: 1px grey;
+  flex-grow: .3;
+}
+
+.input {
+  flex-grow: 1;
+  font-size: 1.3em;
+}
+
+.nav-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  margin: 1% 0;
+}
+
+button,
+.submit {
+  padding: 2%;
+
+  background-color: green;
+  color: white;
+  border: transparent;
+}
+
+button:hover {
+  background-color: lightgreen;
+}
+
+div[class^="episode"] {
+  border: 1px solid black;
+}
+
+div[class^="ep"][class$="container"] {
+  display: flex;
+}
+
+div[class^="text"][class$="container"] {
+  border: 1px solid black;
+  flex-grow: 1;
+}
+
+.image-container {
+  display: flex;
+  width: 20%;
+}
+
+img {
+  min-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bottom {
+    display: flex;
+    justify-content: start;
+    gap: 0;
+  }
+
+  button,
+  .submit {
+    padding: 1%;
+    font-size: 1em;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}
