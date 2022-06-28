@@ -10,9 +10,9 @@ Application to search characters and episode titles for the Breaking Bad televis
 
 ## API and Data Sample
 <ul>
-<li>Characters API: https://breakingbadapi.com/api/characters </li>
-<li>Episodes API: https://breakingbadapi.com/api/episodes </li>
-<li>Deaths API: https://breakingbadapi.com/api/deaths</li>
+    <li>Characters API: https://breakingbadapi.com/api/characters</li>
+    <li>Characters in Episode API: https://www.breakingbadapi.com/api/episodes</li>
+    <li>Episodes Information API: https://api.tvmaze.com/shows/169/episodes</li>
 </ul>
 
 ```
@@ -64,21 +64,35 @@ Application to search characters and episode titles for the Breaking Bad televis
 - View all characters still alive or dead
 
 #### PostMVP  
-- Add description for episodes with second API
+- Add description and image for episodes with second API
 - When character image is clicked, redirects user to wikipedia page for actor
 
 ## Project Schedule
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|June 22| Prompt / Wireframes / Timeframes | Incomplete
-|June 23| Project Approval | Incomplete
-|June 24| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|June 25| Pseudocode / actual code | Incomplete
-|June 26| MVP | Incomplete
-|June 26-27| Post-MVP| Incomplete
+|June 22| Prompt / Wireframes / Timeframes | Complete
+|June 23| Project Approval | Complete
+|June 24| Core Application Structure (HTML, CSS, etc.) | Complete
+|June 25| Pseudocode / actual code | Complete
+|June 26| MVP | Complete
+|June 27| Post-MVP| Complete
 |June 28| Presentations | Incomplete
 
 ## Code Snippet
 ```
+if (tempClassName[tempClassName.length - 1] == r[i].season) {
+  document.querySelector(`.s${r[i].season}`).innerHTML +=
+    `<div class ="episode${i + 1}"> 
+      <p>${r[i].name} : Season: ${r[i].season} Episode: ${r[i].number}</p>
+        <div class="ep${i + 1}-container"> 
+          <div class ="image-container">
+            <img src="${r[i].image.medium}"></img>
+          </div>
+          <div class="text${i + 1}-container">
+            ${r[i].summary}
+          </div>
+        </div>
+    </div>`
+}
 ```
