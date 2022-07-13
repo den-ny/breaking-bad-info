@@ -44,19 +44,19 @@ Application to search characters and episode titles for the Breaking Bad televis
 ## Wireframes
 ### Desktop
 <h5>Home Page</h5>
-<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/frontpage.png" width="70%"> 
+<img src = "https://github.com/den-ny/breaking-bad-info/blob/main/wireframe-images/frontpage.png" width="70%"> 
 <h5>Characters Page</h5>
-<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/characters-page.png" width="70%">
+<img src = "https://github.com/den-ny/breaking-bad-info/blob/main/wireframe-images/characters-page.png" width="70%">
 <h5>Episodes Page</h5>
-<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/episodes-page.png" width="70%">
+<img src = "https://github.com/den-ny/breaking-bad-info/blob/main/wireframe-images/episodes-page.png" width="70%">
 
 ### Mobile
 <h5>Mobile Home Page</h5>
-<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/mobile-home-page.png" width="50%"> 
+<img src = "https://github.com/den-ny/breaking-bad-info/blob/main/wireframe-images/mobile-home-page.png" width="50%"> 
 <h5>Mobile haracters Page</h5>
-<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/mobile-character.png" width="50%">
+<img src = "https://github.com/den-ny/breaking-bad-info/blob/main/wireframe-images/mobile-character.png" width="50%">
 <h5>Mobile Episodes Page</h5>
-<img src = "https://github.com/den-ny/1/blob/main/wireframe-images/mobile-episode.png" width="50%">
+<img src = "https://github.com/den-ny/breaking-bad-info/blob/main/wireframe-images/mobile-episode.png" width="50%">
 
 ### MVP/PostMVP
 #### MVP 
@@ -77,7 +77,7 @@ Application to search characters and episode titles for the Breaking Bad televis
 |June 25| Pseudocode / actual code | Complete
 |June 26| MVP | Complete
 |June 27| Post-MVP| Complete
-|June 28| Presentations | Incomplete
+|June 28| Presentations | Complete
 
 ## Code Snippet
 ```
